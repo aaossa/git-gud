@@ -1,0 +1,16 @@
+# |<----  Using a Maximum Of 50 Characters  ---->|
+# If this commit is applied, it will...
+# Examples of imperative mood: Refactor X, Update Y, Remove Z
+Subject
+
+# |<----   Try To Limit Each Line to a Maximum Of 72 Characters   ---->|
+# What/why/how was this change made?
+
+# Any references to relevant tickets, articles, resources, etc?
+# Example: GitHub issue #23
+
+# Something more?
+# Reported-by: A person or @somebody
+Signed-off-by: Antonio Ossa <aaossa@uc.cl>
+
+# (:heart: emoji? http://emoji.muan.co/)
