@@ -47,6 +47,7 @@ Signed-off-by: Antonio Ossa <aaossa@uc.cl>
 - [x] ~~Script: Allow check multiple commits (`git gud -n 10`)~~
 - [x] ~~Script: Allow check on another branch (`git gud branch`)~~
 - [ ] Script: Check imperative mood in subject
+- [ ] Script: Add flags about output verbosity (`--full`/current, `--warn`/warnings+errors, `--error`/errors only)
 
 ### License
 
