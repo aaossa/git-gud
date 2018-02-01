@@ -2,8 +2,6 @@
 
 A simple git commit checker. I often use a commit message template I created a while ago, and I wanted to make sure that everything was in the right place after writing a commit, that's why this script exists. Use it if you want to *git gud* too. To add this custom git command to git, just place the file in a folder that's in your path (a.k.a `PATH`).
 
-> `git-gud` only works on the last commit of the current branch only, but I'll try to make it work with common options like `git gud -n 10` or `git gud development`. Also a checker for "imperative mood" in the subject seems like a good idea.
-
 ### Checks
 
 - [x] Commit author name is in a valid format ( `Antonio Ossa`)
@@ -46,8 +44,8 @@ Signed-off-by: Antonio Ossa <aaossa@uc.cl>
 - [ ] Wiki: How to use template
 - [ ] Instructions: Use git-gud as custom command
 - [ ] Instructions: Use git-gud as pre-commit hook
-- [ ] Script: Allow check multiple commits (`git gud -n 10`)
-- [ ] Script: Allow check on another branchs (`git gud branch`)
+- [x] ~~Script: Allow check multiple commits (`git gud -n 10`)~~
+- [x] ~~Script: Allow check on another branch (`git gud branch`)~~
 - [ ] Script: Check imperative mood in subject
 
 ### License
