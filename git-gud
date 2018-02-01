@@ -27,8 +27,8 @@ while read -r commit_hash; do
     continue
   fi
 
-  AUTHOR_NAME=`git log -n 1 $commit_hash --format="%aN"`
-  GIT_AUTHOR_NAME=`git config user.name`
+  AUTHOR_NAME=$(git log -n 1 $commit_hash --format="%aN")
+  GIT_AUTHOR_NAME=$(git config user.name)
   # Check: Author name must be in a valid format
   if validateName "$AUTHOR_NAME"; then
     echo "> OK: Author name format is valid ($AUTHOR_NAME)"
@@ -40,8 +40,8 @@ while read -r commit_hash; do
     echo "> WARNING: Author name ($AUTHOR_NAME) is not the same as config ($GIT_AUTHOR_NAME)"
   fi
 
-  AUTHOR_EMAIL=`git log -n 1 $commit_hash --format="%aE"`
-  GIT_AUTHOR_EMAIL=`git config user.email`
+  AUTHOR_EMAIL=$(git log -n 1 $commit_hash --format="%aE")
+  GIT_AUTHOR_EMAIL=$(git config user.email)
   # Check: Author email must be in a valid format
   if validateEmail "$AUTHOR_EMAIL"; then
     echo "> OK: Author email format is valid ($AUTHOR_EMAIL)"
@@ -53,7 +53,7 @@ while read -r commit_hash; do
     echo "> WARNING: Author email ($AUTHOR_EMAIL) is not the same as config ($GIT_AUTHOR_EMAIL)"
   fi
 
-  COMMITER_NAME=`git log -n 1 $commit_hash --format="%cN"`
+  COMMITER_NAME=$(git log -n 1 $commit_hash --format="%cN")
   # Check: Commiter name must be in a valid format
   if validateName "$COMMITER_NAME"; then
     echo "> OK: Commiter name format is valid ($COMMITER_NAME)"
@@ -65,7 +65,7 @@ while read -r commit_hash; do
     echo "> WARNING: Commiter name ($COMMITER_NAME) is not the same as author ($AUTHOR_NAME)"
   fi
 
-  COMMITER_EMAIL=`git log -n 1 $commit_hash --format="%cE"`
+  COMMITER_EMAIL=$(git log -n 1 $commit_hash --format="%cE")
   # Check: Commiter email must be in a valid format
   if validateEmail "$COMMITER_EMAIL"; then
     echo "> OK: Commiter email format is valid ($COMMITER_EMAIL)"
@@ -77,7 +77,7 @@ while read -r commit_hash; do
     echo "> WARNING: Commiter email ($COMMITER_EMAIL) is not the same as author ($AUTHOR_EMAIL)"
   fi
 
-  COMMIT_SUBJECT=`git log -n 1 $commit_hash --format="%s"`
+  COMMIT_SUBJECT=$(git log -n 1 $commit_hash --format="%s")
   # Check: Subject must use a maximum of 50 characters
   if [ ${#COMMIT_SUBJECT} -le 50 ]; then
     echo "> OK: Subject length is correct (${#COMMIT_SUBJECT} <= 50)"
@@ -85,7 +85,7 @@ while read -r commit_hash; do
     echo "> ERROR: Subject is too long (${#COMMIT_SUBJECT} > 50)"
   fi
 
-  COMMIT_BODY=`git log -n 1 $commit_hash --format="%b"`
+  COMMIT_BODY=$(git log -n 1 $commit_hash --format="%b")
   # Check: Body must not be empty
   if [ ${#COMMIT_BODY} -ne "0" ]; then
     echo "> OK: Body is not empty (${#COMMIT_BODY} > 0)"
@@ -126,7 +126,7 @@ while read -r commit_hash; do
     echo "> ERROR: 'Signed-off-by' line does not have author information"
   fi
 
-  COMMIT_SIGNATURE=`git log -n 1 $commit_hash --format="%G?"`
+  COMMIT_SIGNATURE=$(git log -n 1 $commit_hash --format="%G?")
   # Check: Commit must have a good (valid) signature
   if [ "$COMMIT_SIGNATURE" != "G" ]; then
     echo "> WARNING: Signature is not valid (Status: $COMMIT_SIGNATURE)"
