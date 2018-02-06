@@ -51,7 +51,7 @@ Checking... afaeaf5
 
 ### Template
 
-This is the template I use. You can find it as [`.gitmessage`](https://github.com/aaossa/git-gud/blob/master/.gitmessage) in this repo and install it following [these instructions](https://robots.thoughtbot.com/better-commit-messages-with-a-gitmessage-template#automation). The script assumes that you're following these conventions, but you can use your own template if you want (or none) and customize the checker too! That's why is OSS :heart::
+This is the template I use. You can find it as [`.gitmessage`](https://github.com/aaossa/git-gud/blob/master/.gitmessage) in this repo and install it following [these instructions](https://github.com/aaossa/git-gud/wiki/Setup-a-commit-template). The script assumes that you're following these conventions, but you can use your own template if you want (or none) and customize the checker too! That's why is OSS :heart::
 
 ```
 # |<----  Using a Maximum Of 50 Characters  ---->|
@@ -75,7 +75,7 @@ Signed-off-by: Antonio Ossa <aaossa@uc.cl>
 
 ### To do
 
-- [ ] Wiki: How to use template
+- [X] ~~Wiki: How to use template~~
 - [ ] Instructions: Use git-gud as custom command
 - [ ] Instructions: Use git-gud as pre-commit hook
 - [x] ~~Script: Allow check multiple commits (`git gud -n 10`)~~
