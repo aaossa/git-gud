@@ -1,6 +1,6 @@
 # git-gud
 
-A simple git commit checker. I often use a commit message template I created a while ago, and I wanted to make sure that everything was in the right place after writing a commit, that's why this script exists. Use it if you want to *git gud* too. To add this custom git command to git, just place the file in a folder that's in your path (a.k.a `PATH`). You can [setup `git-gud` as custom command](https://github.com/aaossa/git-gud/wiki/Setup-git-gud-as-custom-command) or [setup `git-gud` as `post-commit` hook](https://github.com/aaossa/git-gud/wiki/Setup-'git-gud'-as-'post-commit'-hook).
+A simple git commit checker. I often use a commit message template I created a while ago, and I wanted to make sure that everything was in the right place after writing a commit, that's why this script exists. Use it if you want to *git gud* too. To add this custom git command to git, just place the file in a folder that's in your path (a.k.a `PATH`). You can [setup `git-gud` as custom command](https://github.com/aaossa/git-gud/wiki/Setup-'git-gud'-as-custom-command) or [setup `git-gud` as `post-commit` hook](https://github.com/aaossa/git-gud/wiki/Setup-'git-gud'-as-'post-commit'-hook).
 
 ### Usage
 
