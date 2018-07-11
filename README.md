@@ -1,4 +1,6 @@
 # git-gud
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faaossa%2Fgit-gud.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Faaossa%2Fgit-gud?ref=badge_shield)
+
 
 A simple git commit checker. I often use a commit message template I created a while ago, and I wanted to make sure that everything was in the right place after writing a commit, that's why this script exists. Use it if you want to *git gud* too. To add this custom git command to git, just place the file in a folder that's in your path (a.k.a `PATH`). You can [setup `git-gud` as custom command](https://github.com/aaossa/git-gud/wiki/Setup-'git-gud'-as-custom-command) or [setup `git-gud` as `post-commit` hook](https://github.com/aaossa/git-gud/wiki/Setup-'git-gud'-as-'post-commit'-hook).
 
@@ -86,3 +88,5 @@ Signed-off-by: Antonio Ossa <aaossa@uc.cl>
 ### License
 
 This software is released under the [MIT License](https://opensource.org/licenses/MIT)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faaossa%2Fgit-gud.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Faaossa%2Fgit-gud?ref=badge_large)
