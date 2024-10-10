@@ -6,7 +6,7 @@ validateName() {
   [[ "$1" =~ $re ]]
 }
 validateEmail() {
-  local re="^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]{2,}$"
+  local re="^[^\.\.][a-zA-Z0-9]*(\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\.[a-z]{2,}$"
   [[ "$1" =~ $re ]]
 }
 validateSignedOffExists() {
